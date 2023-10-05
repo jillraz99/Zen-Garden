@@ -20,6 +20,14 @@ body {
   padding: 1em;
 }
 
+.definition p,a {
+  color: $text-light;
+}
+
+.definition {
+  background-color: primary;
+}
+
 section {
   background-color: white;
   padding: 1em;
@@ -50,6 +58,12 @@ section {
 .accent2 {
   background-color: $accent2;
 }
+
+.accent3 {
+  background-color:
+  $accent3;
+}
+
 .text-dark {
   background-color: $text-dark;
 }
