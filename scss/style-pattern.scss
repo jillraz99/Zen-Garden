@@ -20,13 +20,18 @@ body {
   padding: 1em;
 }
 
-.definition p,a {
+
+
+header {
+  background-color: $primary;
+}
+header h1 {
   color: $text-light;
 }
 
-.definition {
-  background-color: primary;
-}
+.definition p {
+  color: $text-light;
+  }
 
 section {
   background-color: white;
