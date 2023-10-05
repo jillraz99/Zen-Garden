@@ -75,7 +75,7 @@ a {
 }
 
 a:hover {
-  border-color: #0F9252;
+  color: #0F9252;
 }
 
 [role=banner] > h1 {
