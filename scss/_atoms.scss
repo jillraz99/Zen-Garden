@@ -36,6 +36,7 @@ h1 {
   
   font-weight: 400; 
   font-size: 3em;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
   line-height: 1em;
@@ -43,17 +44,16 @@ h1 {
 
 h2 {
   font-family:$fonts-body;
-  background-color: $accent1;
   color: $text-light;
   display: inline-block;
   font-weight: normal;
   margin-bottom: 1em;
-  padding: 0.5em 1em;
-  font-size: 2.25em;
+  font-size: 1.5em;
 }
 
 h3 {
   font-size: 2em;
+  color: $primary;
   font-weight: 200; 
   text-transform: uppercase;
   /* Thin
@@ -71,19 +71,29 @@ h4 {
 
 p {
   @include set-font(1em, 1.5em);
+  color: $text-light;
   padding: 0.5em 0;
   margin: 0;
+}
+
+.preamble p {
+    color: $primary;
 }
 
 a {
   color: $primary;
   text-transform: uppercase;
   text-decoration: none;
-  @include set-font (1em, 1.5em);
-  font-size: 1.5em;
+  @include set-font (1em, 1.3em);
+  font-size: 1.2em;
 
 }
 
 a:hover {
   color: $accent1;
+}
+
+header {
+    padding-top: 35%;
+    text-align: center;
 }

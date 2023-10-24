@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif+Caption:ital@0;1&display=swap");
+/*fonts and colors
+White(text-light)        #FFFFFF (text color)
+Gray(background)        #D9D9D9 (background)
+Dark Gray(text-dark)    #231C11 (text color)
+Dark Navy(primary)     #0A265B (body text and Hero section background color)
+Dark Green(accent1)     #0F9252 (tree and the link section background)
+Med Green(accent2)    #00BF64 (tree)
+Light Green)accent3)    #7ED957 (tree)
+
+Fonts
+Heading       PT Serif Caption
+Body    PT Sans
+*/
+h1,
+h3,
+h4 {
+  font-family: "PT Serif Caption", serif;
+  margin: 0;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 3em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1em;
+}
+
+h2 {
+  font-family: "PT Sans", sans-serif;
+  color: #fff;
+  display: inline-block;
+  font-weight: normal;
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 2em;
+  color: #0A265B;
+  font-weight: 200;
+  text-transform: uppercase;
+  /* Thin
+  letter-spacing: 1px;
+  line-height: 1em;
+  padding: 0.5em 0 0.25em 0; */
+}
+
+h4 {
+  font-size: 1.5em;
+  font-weight: 200; /* Thin
+letter-spacing: 1px;
+line-height: 1em;
+margin: 0.5em 0; */
+}
+
+p {
+  font-family: "PT Sans", sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #fff;
+  padding: 0.5em 0;
+  margin: 0;
+}
+
+.preamble p {
+  color: #0A265B;
+}
+
+a {
+  color: #0A265B;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "PT Sans", sans-serif;
+  font-size: 1em;
+  line-height: 1.3em;
+  font-size: 1.2em;
+}
+
+a:hover {
+  color: #0F9252;
+}
+
+header {
+  padding-top: 35%;
+  text-align: center;
+}
+
+[role=banner] > h1 {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.summary {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  padding: 5% 10%;
+}
+.summary a {
+  color: #fff;
+}
+
+.preamble {
+  background: #D9D9D9;
+  padding: 5% 0%;
+}
+
+.intro {
+  padding-top: 5%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #D9D9D9;
+  padding: 5%;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 85%;
+  color: #231C11;
+  background-color: #D9D9D9;
+  margin: 0;
+}
+
+/* Yuri - Name grid areas */
+section {
+  grid-area: section;
+  background-color: #0A265B;
+}
+
+.main {
+  grid-area: main;
+  background-color: #0A265B;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+/* Yuri - Creating Grid Structures */
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 4.5em repeat(3, 1fr) 4.5em;
+  grid-template-rows: auto;
+  grid-template-areas: ". section section section . " ". main main sidebar .";
+  grid-column-gap: 30px;
+  grid-row-gap: 50px;
+  max-width: 1300px;
+}
+
+/* Yuri - Change back to block structure below 880px */
+@media (max-width: 880px) {
+  .page-wrapper {
+    display: block;
+    margin-right: 1em;
+    margin-left: 1em;
+  }
+}
+div#zen-supporting {
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
+/*  Hero Image */
+section#zen-intro {
+  background-image: url(../images/zen-garden-trees-moon.png);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+/*# sourceMappingURL=style.css.map */
