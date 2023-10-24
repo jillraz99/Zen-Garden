@@ -15,10 +15,60 @@ body {
   font-family: $fonts-body;
   font-size: 85%;
   color: $text-dark;
-  background-color: $primary;
+  background-color: $background-color;
   margin: 0;
-  padding: 1em;
 }
+
+/* Yuri - Name grid areas */
+section {
+    grid-area: section;
+    background-color: $primary;
+}
+.main {
+    grid-area: main;
+        background-color: $primary;
+}
+.sidebar {
+    grid-area: sidebar;
+}
+
+/* Yuri - Creating Grid Structures */ 
+.page-wrapper {
+    display: grid;
+    grid-template-columns: 4.5em repeat(3, 1fr) 4.5em;
+    grid-template-rows: auto;
+    grid-template-areas:
+        ". section section section . "
+        ". main main sidebar .";
+    grid-column-gap: 30px;
+    grid-row-gap: 50px;
+    max-width: 1300px;
+}
+
+/* Yuri - Change back to block structure below 880px */
+@media (max-width: 880px){
+    .page-wrapper {
+    display: block;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+}
+
+div#zen-supporting {
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+/*  Hero Image */
+section#zen-intro {
+    background-image: url(../images/zen-garden-trees-moon.png);
+    background-size:90%;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+
+
 
 
 
